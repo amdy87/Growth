@@ -1,0 +1,30 @@
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1fr,6);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+section {
+    margin: 10px;
+    background-color: var(--section-background);
+    border-radius: 12px;
+}
+
+.profile-bar {
+    grid-row: 1 / 4;
+}
+
+.inspirational-quote {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+}
+
+.add-habit {
+    grid-column: 6;
+}
+
+.habit-list {
+    grid-column: 2 / 7;
+    grid-row: 2 / 4;
+}
