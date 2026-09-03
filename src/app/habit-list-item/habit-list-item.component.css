@@ -1,0 +1,42 @@
+.bar {
+    padding: 10px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.top p {
+    width: fit-content;
+}
+
+.top #right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+
+.bottom h2 {
+    width: fit-content;
+}
+
+.bottom #right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
