@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ComponentRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-habit-list-item',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './habit-list-item.component.css'
 })
 export class HabitListItemComponent {
+  @Input() selfRef!: ComponentRef<HabitListItemComponent>;
 
+  deleteSelf() {
+    this.selfRef.destroy();
+  }
 }

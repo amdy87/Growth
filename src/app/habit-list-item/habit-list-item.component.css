@@ -40,3 +40,15 @@
     gap: 10px;
 }
 
+button {
+    border-radius: 5px;
+}
+
+#edit-button {
+}
+
+#delete-button {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+

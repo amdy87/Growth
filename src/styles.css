@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --primary-color: #6ed067;
-    --secondary-color: #496ebe;
+    --green: #32a852;
+    --red: #e81a1a;
     --background: #cfcfcf;
     --section-background: #f7f7f7;
     --accent-color: #000;
+    --hover-color: #ffffff85;
 }
 
 * {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ComponentRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HabitListItemComponent } from "./habit-list-item/habit-list-item.component";
 import { AddHabitComponent } from './add-habit/add-habit.component';
@@ -13,4 +13,10 @@ import { ProfileBarComponent } from './profile-bar/profile-bar.component';
 })
 export class AppComponent {
   title = 'Growth';
+  @ViewChild('container', {read: ViewContainerRef}) vcr!: ViewContainerRef;
+
+  createHabitComponent(){
+    const cmpRef = this.vcr.createComponent(HabitListItemComponent);
+    cmpRef.instance.selfRef = cmpRef;
+  }
 }
