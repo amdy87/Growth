@@ -20,5 +20,7 @@ Growth is a habit tracking dashboard that allows users to create and track multi
 Front-end
 Angular and Typescript for webpage design
 
-Project is deployed using Docker
+
+Database
+MySQL
 
