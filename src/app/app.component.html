@@ -1,4 +1,24 @@
 <body>
+  <div
+    id="add-habit-widget"
+    #widget
+    [style.visibility]="widgetVisible ? 'visible' : 'hidden'"
+  >
+    <h1>Add New Habit</h1>
+    <div>
+      <h2>Goal</h2>
+      <input type="text" #goalName />
+      <h2>Habit</h2>
+      <input type="text" #habitName />
+    </div>
+
+    <div>
+      <button (click)="createHabitComponent(habitName.value, goalName.value)">
+        Accept
+      </button>
+      <button (click)="hideHabitWidget()">Cancel</button>
+    </div>
+  </div>
   <div class="grid-container">
     <section class="profile-bar">
       <app-profile-bar></app-profile-bar>
@@ -6,7 +26,7 @@
     <section class="inspirational-quote">
       <app-inspirational-quote></app-inspirational-quote>
     </section>
-    <section class="add-habit" (click)="createHabitComponent()">
+    <section class="add-habit" (click)="showHabitWidget()">
       <app-add-habit></app-add-habit>
     </section>
     <section class="habit-list">

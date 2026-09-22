@@ -1,17 +1,17 @@
 <div class="bar">
   <div class="top">
-    <p>Goal</p>
+    <p>{{ goal }}</p>
     <div id="right">
       <button id="edit-button">Edit</button>
       <button id="delete-button" (click)="deleteSelf()">Delete</button>
     </div>
   </div>
   <div class="bottom">
-    <h2>Habit 1</h2>
+    <h2>{{ habit }}</h2>
     <div id="right">
-      <input type="checkbox" />
+      <input type="checkbox" (click)="addToStreak()" #streakCheck />
       <img src="" alt="icon" />
-      <h2>7 days</h2>
+      <h2>{{ streak }} days</h2>
     </div>
   </div>
 </div>

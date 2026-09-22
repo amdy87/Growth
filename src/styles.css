@@ -2,10 +2,11 @@
 :root {
     --green: #32a852;
     --red: #e81a1a;
-    --background: #cfcfcf;
-    --section-background: #f7f7f7;
+    --background: #9fddba;
+    --section-background: #f2fff8;
     --accent-color: #000;
     --hover-color: #ffffff85;
+    --second-background: #2f6b57;
 }
 
 * {

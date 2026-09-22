@@ -37,3 +37,27 @@ section {
     grid-row: 2 / 5;
     overflow: scroll;
 }
+
+#add-habit-widget {
+    background-color: var(--second-background);
+    border-radius: 12px;
+    position: fixed;
+    visibility: visible;
+    padding: 10px;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: fit-content;
+  min-height: fit-content;
+  height: 200px;
+  width: 400px;
+}
+
+#add-habit-widget > * {
+    background-color: var(--section-background);
+    
+}
+
+#add-habit-widget > div > * {
+    background-color: var(--section-background);
+}
